@@ -23,36 +23,36 @@ ul {
 	margin-inline-end: 0;
 	padding-inline-start: 0;
 }
-body {
+
+body,
+html {
 	background-color: var(--dark-cyan);
 	font-family: "Kumbh Sans", sans-serif;
+	font-size: 18px;
+	height: 100%;
+}
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	min-height: 100vh;
-	overflow: hidden;
-	margin: 0;
+.container {
+	background-color: var(--dark-cyan);
 }
 
 .body-bg-top {
-	width: 1200px;
 	position: absolute;
-	top: -600px;
-	left: -300px;
+	top: -97%;
+	right: 43%;
+	z-index: 1;
 }
 
 .body-bg-bottom {
-	width: 1200px;
 	position: absolute;
-	top: -750px;
-	left: -200px;
+	bottom: -97%;
+	left: 44%;
+	z-index: 1;
 }
 
 .card {
 	background-color: #fff;
-	position: relative;
+	/* position: relative; */
 	width: 350px;
 	height: 440px;
 	display: flex;
@@ -62,10 +62,10 @@ body {
 	border-radius: 45px 45px 30px 30px;
 }
 
-.card-top-bg {
+/* .card-top-bg {
 	position: relative;
 	top: 0;
 	width: 100%;
 	height: 120px;
 	border-radius: 20px 20px 0 0;
-}
+} */
