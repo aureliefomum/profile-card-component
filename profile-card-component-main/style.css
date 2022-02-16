@@ -34,6 +34,9 @@ html {
 
 .container {
 	background-color: var(--dark-cyan);
+	height: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .body-bg-top {
@@ -50,16 +53,21 @@ html {
 	z-index: 1;
 }
 
-.card {
-	background-color: #fff;
-	/* position: relative; */
-	width: 350px;
-	height: 440px;
+.content {
+	height: 100%;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-radius: 45px 45px 30px 30px;
+}
+
+.card {
+	background: #fff url("images/bg-pattern-card.svg") no-repeat;
+	position: relative;
+	width: 350px;
+	height: 440px;
+	border-radius: 25px;
+	z-index: 2;
+	display: flex;
 }
 
 /* .card-top-bg {
