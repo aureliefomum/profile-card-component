@@ -68,12 +68,39 @@ html {
 	border-radius: 25px;
 	z-index: 2;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-/* .card-top-bg {
-	position: relative;
-	top: 0;
-	width: 100%;
-	height: 120px;
-	border-radius: 20px 20px 0 0;
-} */
+.card-profile {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img-profile img {
+	border: 5px solid #fff;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.user-name {
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--very-dark-desaturated-blue);
+	padding-top: 1rem;
+}
+
+.user-age {
+	color: var(--dark-gray);
+	font-weight: 400;
+}
+
+.user-city {
+	color: var(--dark-grayish-blue);
+	font-size: 14px;
+	padding-top: 0.5rem;
+	margin-bottom: 1rem;
+}
